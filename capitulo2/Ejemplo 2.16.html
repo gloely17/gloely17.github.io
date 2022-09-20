@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.16: interna.html -->
+<!-- Vínculación interna -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vínculos internos</title>
+    </head>
+
+    <body>
+        <p>
+            <a href="../Index.html">
+                <img src ="../botones/regresar.png" width="150" 
+                height="70" alt="Regresar">
+              </a>
+        </p>
+        <!-- el atributo id crea un destino de hipervinculos interno-->
+        <h1 id="caracteristicas">Las mejores características de Internet</h1>
+
+        <!-- la dirección de un vínculo interno es "#id"-->
+        <p><a href="#insectos">Ir a <em>Insectos fvoritos</em></a></p>
+
+        <ul>
+            <li>Puede conocer personas de países de todo el mundo</li>
+            <li>Tiene acceso a los medios a medida que se vuelven públicos:
+                <ul>
+                    <li>Nuevos juegos</li>
+                    <li>Nuevas apicaciones
+                        <ul>
+                            <li>Por negocios</li>
+                            <li>Por placer</li>
+                        </ul>
+                    </li>
+                    <li>Noticias de todo el mundo</li>
+                    <li>Motores de búsqueda</li>
+                    <li>Compras</li>
+                    <li>Programación 
+                        <ul>
+                            <li>HTML5</li>
+                            <li>Java</li>
+                            <li>Dynamic HTML</li>
+                            <li>Secuencias de comandos</li>
+                            <li>Nuevos lenguajes</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>Vínculos</li>
+            <li>Mantenerse en contacto con viejos amigos</li>
+            <li>Es la tecnológia del futuro</li>
+        </ul>
+
+        <!-- el atributo id crea un destino de hipervínculo interno -->
+        <h1 id="insectos">Mis 3 insectos favoritos</h1>
+        <p>
+            <!-- hipervínculo interno  las caracteristicas -->
+            <a href="#caracteristicas">Ir a <em>características favoritas</em></a>
+        </p>
+        <ol>
+            <li>Luciérnaga</li>
+            <li>Hormiga roja</li>
+            <li>Aberrojo</li>
+        </ol>
+    </body>
+</html>
