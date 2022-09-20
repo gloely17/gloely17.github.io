@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 3.5: Ejercicio_3.5.html -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Elementos</title>
+    </head>
+    <body>
+        <p>
+            <a href="../Index.html">
+                <img src ="../botones/regresar.png" width="150" 
+                height="70" alt="Regresar">
+              </a>
+        </p>
+        <h1>Ejercicio 3.5</h1>
+        <ol type="a">
+            <li>Elemento meter <br><br>
+                1 <meter min="1" max="10" value="7"></meter> 10 <p>Calificaci&oacute;n promedio (verde) es 7 de 10</p>
+            </li>
+
+            <li>Mostrar el texto (details) "Resultado de la encuesta" en elemento summary <br><br>
+                <details>
+                    <summary>Resultados de la encuesta</summary>
+                        <p>Se pidio a los estudiantes que clasificaran los alimentos en la cafeteria, en una escala del 1 al 10 y el 
+                            resultado promedio obtenido fue 7 de 10.</p>
+                </details><br><br>    
+            </li>
+
+            <li>input text para el primer nombre: 
+                <form method="post" autocomplete="on">
+                    <p><label>Primer nombre:
+                        <input type="text"id = "primerNombre"/> (Primer nombre)
+                    </label></p>
+                </form><br>
+            </li>
+
+            <li>input text para el primer nombre sin label, usando placeholder.
+                <form method="post" autocomplete="on">
+                <p><input type="text"id = "primerNombre" placeholder="Primer nombre" /> (Primer nombre)</p>
+                </form>
+            </li>
+
+            <li>Lista de cinco estados con elemento datalist:
+                <p><label for = "listaTexto">Estado:
+                    <input type="text"id=edo"listaTexto" placeholder="Seleccione un estado"list ="edo" />
+                    <datalist id="edo">
+                        <option value="Veracruz">
+                        <option value="Puebla">
+                        <option value="Nuevo Le&oacute;n">
+                        <option value="Nayarit">
+                        <option value="Hidalgo">
+                    </datalist>
+                </label></p>
+            </li>
+                
+            <li> input range del 1 al 100: 
+                <p>
+                    <label>Rango:
+                    1 <input type="range" min="1" max="100" value="10" /> 100
+                    </label>
+                </p>
+            </li>
+
+            <li> Autocomplete = "off":
+                <form method="post" autocomplete="off">
+                    <p><label>Primer nombre:
+                        <input type="text"id = "primerNombre"/> (Primer nombre)
+                    </label></p>
+                </form><br>
+            </li>
+
+            <li>Elemento mark:
+                <p>Se pidio a los estudiantes que clasificaran los alimentos en la cafeteria. <mark>En una escala del 1 al 10.</mark> El 
+                    resultado promedio fue 7.</p>
+            </li>
+
+        </ol>
+        
+    </body>
+</html>
