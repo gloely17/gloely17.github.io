@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<!-- fig 5.18: Consultasmedios.html-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Consultas de Medios</title>
+        <style type="text/css">
+            p{
+                margin: 0.9em 0em;
+            }
+            /* estilos para smartphones con anchuras de pantalla de 480px o menos */
+            @media handheld and (max-width: 480px),
+            screen and (max-device-width:480px),
+            screen and (max-width: 480px)
+            {
+                div{
+                    -webkit-column-count: 1;
+                    column-count: 1;
+                }
+            }
+            /*estilos para dispositivos con anchuras de pantalla de 481px a 1024px */
+            @media only screen and (min-width: 481px) and (max-width: 1024px)
+            {
+                div{
+                    -webkit-column-count: 2;
+                    column-count: 2;
+                    -webkit-column-gap: 30px;
+                    column-gap: 30px;
+                    -webkit-column-rule: 1px outset black;
+                    column-rule: 1px outset black;
+                }
+            }
+            /* estilos para dispositivos con anchuras de pantalla de 1025px o mayor */
+            @media only screen and (min-width: 1025px)
+            {
+                div{
+                    -webkit-column-count: 3;
+                    column-count: 3;
+                    -webkit-column-gap: 30px;
+                    column-gap: 30px;
+                    -webkit-column-rule: 1px outset black;
+                    column-rule: 1px outset black;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <a href="../Capitulo5/index.html">
+                <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+              </a>
+
+            <a href="../index.html">
+                <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+            </a>
+        </p>
+        <header>
+            <h1>Computadoras, hardware y software</h1>
+        </header>
+
+        <div class="multicolumna">
+
+            <p>Una computadora es un dispositivo que puede realizar calculos y tomar decisiones logicas con mucha rapidez
+                que los humanos. Muchas de las computadoras personales de la actualidad pueden realizar miles de millones de calculos en un
+                segundo, mas de lo que un humano puede realizar durante toda su vida. Las supercomputadoras ya se encuentran realizando miles
+                de millones de instrucciones por segundo. Para poner esto en perspectiva, una computadora de un trillon de instrucciones 
+                por segundo puede realizar en un segundo mas de 100,000 calculos para cada persona en el planeta. Y estos limites superiores 
+                aumentan con rapidez. 
+            </p>
+
+            <p>
+                Las computadoras procesan datos bajo el control de conjuntos de instrucciones llamadas programas de computadora. Estos programas 
+                guian a la computadora por conjuntos ordenados de acciones especificadas por personas llamadas programadores de computadora. 
+                Los programas que se ejecutan en una computadora se conocen como software . En este libro usted 
+                aprendera sobre la metodologia de programacion clave de la actualidad que mejora la productividad del programador, con lo cual se reducen 
+                los costos de desarrollo de software, programacion orientada a objetos.
+            </p>
+
+
+            <p>Una computadora consiste de diversos dispositivos conocidos como hardware (por ejemplo: el teclado, pantalla, raton, discos duros, 
+                memoria,DVD y unidades de procesamiento). Los costos de las computadoras desiminuyen en forma dramatica debido a los rapidos 
+                desarrollos en las etcnologias de hardware y software. Las computadoras que podrian haber llenado salones enteros y costar millones 
+
+            </p>
+
+
+            <p>Una computadora consiste de diversos dispositivos conocidos como
+                hardware (por ejemplo: el teclado, pantalla, raton, discos duros, memoria,DVD Y
+                unidades de procesamiento). Los costos de las computadoras desiminuyen en 
+                forma dramatica debido a los rapidos desarrollos en las etcnologias de hardware y software
+                . Las computadoras que podrian haber llenado salones enteros y costar millones 
+                
+            </p>
+
+            <footer>
+                <em>&copy; 2012 por Pearson Education, Inc. Todos los derechos reservados.</em>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

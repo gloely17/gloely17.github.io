@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- ejercicio 5.7 gradientelineal.html  Gradientes lineales en CSS3. -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gradiente Lineal</title>
+        <style type="text/css">
+            #diagonal {
+                width: 500px;
+                height: 500px;
+                border: 3px solid purple;
+                padding: 5px 20px;
+                text-align: center;
+                background: -webkit-gradient(
+                    linear,left top, right bottom, color-stop(red), color-stop(orange), color-stop(yellow),
+                    color-stop(green), color-stop(blue),color-stop(indigo),color-stop(violet));
+                background: -moz-linear-gradient(top left, red, orange, yellow, green, blue, indigo, violet);
+                background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+                float: left;
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <a href="../Capitulo5/index.html">
+                <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+              </a>
+
+            <a href="../index.html">
+                <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+            </a>
+        </p>
+        <div id="diagonal"><h2>Gradiente lineal diagonal </h2></div>
+    </body>
+</html>

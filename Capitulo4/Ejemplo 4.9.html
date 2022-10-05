@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Fig. 4.9: posicionamiento.html -->
+<!-- Posicionamiento absoluto de los elementos.  -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Posicionamiento Absoluto </title>
+        <style type="text/css" >
+            .imagen_fondo {position: absolute;
+                           top: 0px;
+                           left: 0px;
+                           z-index: 1; }
+            .imagen_primerplano {position: absolute;
+                            top: 25px;
+                            left: 100px;
+                            z-index: 2; }
+            .texto         {position: absolute;
+                            top: 25px;
+                            left: 100px;
+                            z-index: 3;
+                            font-size: 20pt;
+                            font-family: tahoma, Geneva, sans-serif; }
+            .imagen_regresa {position: absolute;
+                             z-index: 4;}
+        </style>
+    </head>
+    <body>
+        <p class="imagen_regresa">
+            <a href="../Capitulo4/index.html">
+                <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+              </a>
+
+            <a href="../index.html">
+                <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+            </a>            
+        </p>
+
+        <p><img src="../img/imagen_fondo.png" class="imagen_fondo" alt="Primera Imagen Posicionada" /> </p>
+
+        <p><img src="../img/imagen_primerplano.jpg" class="imagen_primerplano" alt="segunda imagen posicionada" /></p>
+
+        <p class="texto"><br>Jimin my love &lt;3 </p>
+    </body>
+</html>

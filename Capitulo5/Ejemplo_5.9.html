@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!-- Fig 5.9 reflejo.html -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reflejo</title>
+        <style type="text/css">
+            img {margin-right: 30px}
+            img.below{
+                -webkit-box-reflect: below 5px 
+                    -webkit-gradient(
+                        linear, left top, left bottom, from(transparent), to(white)
+                    );
+            }
+            img.right {
+                -webkit-box-reflect: right 5px 
+                    -webkit-gradient(
+                        linear, right top, left top, from(transparent), to(white)
+                    );
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <a href="../Capitulo5/index.html">
+                <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+              </a>
+
+            <a href="../index.html">
+                <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+            </a>
+        </p>
+        <img class="below" src="../img/jhtp.jpg" width="138" height="180" alt="Portada del libro Java How to Program">
+        <img class="right" src="../img/jhtp.jpg" width="138" height="180" alt="Portada del libro Java How to Program">
+
+
+    </body>
+</html>

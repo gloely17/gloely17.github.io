@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- ejercicio 5.10 inclinar.html -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Inclinar</title>
+        <style type="text/css">
+            .skew .textbox {
+                margin-left: 75px;
+                background: lightgreen;
+                height: 100px;
+                width: 200px;
+                padding: 25px 0;
+                text-align: center;
+                font-size: 250%;
+                border: 3px solid darkgreen;
+                border-radius: 15px;
+                -webkit-animation: skew 3s infinite linear;
+                -moz-animation: skew 3s infinite linear;
+                animation: skew 3s infinite linear;
+            }
+            @-webkit-keyframes skew
+            {
+                from {-webkit-transform: skewy(0deg);}
+                10% {-webkit-transform: skewy(30deg);}
+                20% {-webkit-transform: skewy(0deg);}
+                30% {-webkit-transform: skewy(-30deg);}
+                45% {-webkit-transform: skewy(0deg);}
+                60% {-webkit-transform: skewx(0deg);}
+                70% {-webkit-transform: skewx(30deg);}
+                80% {-webkit-transform: skewx(0deg);}
+                90% {-webkit-transform: skewx(-30deg);}
+                to {-webkit-transform: skewy(0);}
+            }
+            @-moz-keyframes skew
+            {
+                from {-webkit-transform: skewy(0deg);}
+                10% {-webkit-transform: skewy(30deg);}
+                20% {-webkit-transform: skewy(0deg);}
+                30% {-webkit-transform: skewy(-30deg);}
+                45% {-webkit-transform: skewy(0deg);}
+                60% {-webkit-transform: skewx(0deg);}
+                70% {-webkit-transform: skewx(30deg);}
+                80% {-webkit-transform: skewx(0deg);}
+                90% {-webkit-transform: skewx(-30deg);}
+                to {-webkit-transform: skewy(0);}
+            }
+            @-keyframes skew
+            {
+                from {-webkit-transform: skewy(0deg);}
+                10% {-webkit-transform: skewy(30deg);}
+                20% {-webkit-transform: skewy(0deg);}
+                30% {-webkit-transform: skewy(-30deg);}
+                45% {-webkit-transform: skewy(0deg);}
+                60% {-webkit-transform: skewx(0deg);}
+                70% {-webkit-transform: skewx(30deg);}
+                80% {-webkit-transform: skewx(0deg);}
+                90% {-webkit-transform: skewx(-30deg);}
+                to {-webkit-transform: skewy(0);}
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <a href="../Capitulo5/index.html">
+                <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+              </a>
+
+            <a href="../index.html">
+                <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+            </a>
+        </p>
+        <div class="box skew">
+            <div class="textbox">Inclinar texto</div>
+        </div>
+    </body>
+</html>

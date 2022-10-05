@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 5.11-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fusi&oacute;n de Im&aacute;genes</title>
+        <style type="text/css">
+            #portada {
+                position: relative;
+                margin-left: 35%;
+            }
+            #portada img {
+                position: absolute;
+                left: 0;
+            }
+            #portada:hover .top1 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear;
+                transition: opacity 3s linear;
+            }
+            #portada:hover .top2 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 3s;
+                transition: opacity 3s linear 3s;
+            }
+            #portada:hover .top3 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 6s;
+                transition: opacity 3s linear 6s;
+            }
+            #portada:hover .top4 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 9s;
+                transition: opacity 3s linear 9s;
+            }
+            #portada:hover .top5 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 12s;
+                transition: opacity 3s linear 12s;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <a href="../Capitulo5/index.html">
+                <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+              </a>
+
+            <a href="../index.html">
+                <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+            </a>
+        </p>
+        <div id="portada">
+            <img class="top5" src="../img/p5.jpg" width="450" height="600" alt="Paisaje5">
+            <img class="top4" src="../img/p4.jpg" width="450" height="600" alt="Paisaje4"> 
+            <img class="top3" src="../img/p3.jpg" width="450" height="600" alt="Paisaje3"> 
+            <img class="top2" src="../img/p2.jpg" width="450" height="600" alt="Paisaje2"> 
+            <img class="top1" src="../img/p1.jpg" width="450" height="600" alt="Paisaje1"> 
+        </div>
+    </body>
+</html>

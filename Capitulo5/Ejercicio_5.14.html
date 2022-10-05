@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 5.14 Transformacion:hover-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Transiciones</title>
+
+    <style type="text/css">
+        .img2 {
+            margin: 80px;
+            -webkit-transition: -webkit-transform 2s;
+            -moz-transition: -moz-transform 2s;
+            -o-transition: -o-transform 2s;
+            -transition: transform 2s;
+        }
+
+        img:hover {
+            -webkit-transform: scale(120%);
+            -moz-transform:  scale(120%);
+            -o-transform:  scale(120%);
+            transform:  scale(120% );
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="../Capitulo5/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+    <img class="img2" src="../img/p1.jpg" width="76" height="100" alt="Paisaje4">
+    <img class="img2" src="../img/p2.jpg" width="76" height="100" alt="Paisaje3">
+    <img class="img2" src="../img/p5.jpg" width="76" height="100" alt="Paisaje2">
+    <img class="img2" src="../img/p4.jpg" width="76" height="100" alt="Paisaje1">
+
+</body>
+
+</html>

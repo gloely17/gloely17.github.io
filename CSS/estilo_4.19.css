@@ -1,0 +1,12 @@
+/*Fig. 4.19: estilousuario.css */
+/* Una hoja de eestilo de usuario */
+
+/*Configurado para ver las paginas web cuando se abren en internet explorer */
+/* para desconfigurar entra en la computadora a "opciones de internet" --> Accesibilidad --> deshabilitar opcion
+   "Hoja de estilos de usuario" */
+
+body {
+    font-size: 20pt;
+    color: yellow;
+    background-color: navy;
+}

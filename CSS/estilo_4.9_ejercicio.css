@@ -1,0 +1,22 @@
+/* Hoja de ESTILOS CSS para ejercicio 4.9 */
+
+div.nodec{
+    border-style: solid;
+    border-color: yellow;
+    background-color: lightpink;
+    font-size: 3em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+    float: left;
+    width: 250px;
+}
+div:hover{
+    border-style: dashed;
+    border-color: green;
+    background-color: lawngreen;
+    font-size: 3em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+    float: left;
+    width: 250px;
+}

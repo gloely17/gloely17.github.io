@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- Fig 5.15 fuentes_incrustadas.html -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fuentes Incrustadas</title>
+        <link href="http://fonts.googleapis.com/css?family=Rosario" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            .flexbox {
+                width: 600px;
+                height: 420px;
+                display: -webkit-box;
+                display: box;
+                -webkit-box-orient: horizontal;
+                box-orient: horizontal;
+            }
+            .flexbox > div{
+                -webkit-transition: 1s ease-out;
+                transition: 1s ease-out;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                border: 2px solid black;
+                width: 120px;
+                margin: 10px -10px 10px 0px;
+                padding: 20px 20px 20px 20px;
+                box-shadow: 10px 10px 10px dimgrey;
+            }
+            .flexbox > div:nth-child(1){background-color: lightgrey;}
+            .flexbox > div:nth-child(2){background-color: lightgrey;}
+            .flexbox > div:nth-child(3){background-color: lightgrey;}
+            .flexbox > div:nth-child(4){background-color: lightgrey;}
+
+            .flexbox > div:hover {
+                width: 200px; color: white; font-weight: bold; }
+            .flexbox > div:nth-child(1):hover{background-color: royalblue;}
+            .flexbox > div:nth-child(2):hover{background-color: crimson;}
+            .flexbox > div:nth-child(3):hover{background-color: crimson;}
+            .flexbox > div:nth-child(4):hover{background-color: darkgreen;}
+
+            p {height: 250px; overflow: hidden; font-family: "Rosario";}
+        </style>
+    </head>
+    <body>
+        <a href="../Capitulo5/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+                
+        <div class="flexbox">
+            <div><img src="../img/oceano.jpg" alt="icono de practica" width="100" height="100">
+                <p>Las buena spracticas de programacion indican las tecnicas que le ayudaran a producir
+                    programa mas claros, comprensibles y faciles de mantener.
+                </p>
+            </div>
+            <div><img src="../img/oceano2.jpg" alt="icono de practica" width="100" height="100">
+                <p>
+                    Los tips para prevenir errores contienen sugerencias para exponer errores
+                    y eliminarlps de sus programas; muchos dscriben aspectos de 
+                    programacion que evitan que los errores entren siquiera a los programas.
+
+                </p>
+            </div>
+
+            <div><img src="../img/deitel.png" alt="icono de practica" width="100" height="100">
+                <p>
+                    Los errores de programacion se&ntilde;alan los erores que cometen los 
+                    estudiantes con frecuencia.Estos errores comunes de programcion reducen 
+                    la probabilidad de que usted cometa los mismo errores.
+                </p>
+            </div>
+
+            <div><img src="../img/imagen_fondo.jpg" alt="icono de practica" width="100" height="100">
+                <p>
+                    Las observaciones de ingenieria de softwrae realtan los asuntos de 
+                    arquitectura y dise&ntilde;o que afectan en la construccion de sistemas de 
+                    software, en especial los sistemas de ran escala.
+                </p>
+            </div>
+            
+
+        </div>
+    </body>
+</html>
