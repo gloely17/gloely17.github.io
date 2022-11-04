@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de la instrucción continue en una instrucción for</title>
+
+    
+</head>
+<body>
+    <p>
+        <a href="../Capitulo 8/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+    
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+
+    <script>
+        for(var cuenta=1; cuenta<=10; ++cuenta){
+            if(cuenta==5){
+                continue;
+            }
+            document.writeln(cuenta+" ");
+        }
+
+        document.writeln("<p>Se usá continue para no imprimir el 5</p>");
+
+    </script>
+</body>
+</html>

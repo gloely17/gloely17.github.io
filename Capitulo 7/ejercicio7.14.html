@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Ejercicio 7.14 </title>
+
+    
+</head>
+
+<body>
+    <p>
+        <a href="../Capitulo 7/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+    
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+
+    <script>
+        var cuotaNormal;
+        var horasExtra;
+        var sueldoBruto;
+        var horasTrabajadas;
+        var contador;
+
+        contador = 1
+
+        document.writeln("<h1>Sueldo bruto de empleados: </h1>")
+
+        while (contador <= 3) {
+            cuotaNormal = window.prompt(
+                "Ingrese la cuota normal por hora del empleado " + contador + " :"
+            );
+            horasTrabajadas = window.prompt(
+                "Ingrese las horas trabajadas: "
+            );
+
+            cuotaNormal = parseFloat(cuotaNormal);
+            horasTrabajadas = parseInt(horasTrabajadas);
+
+            if (horasTrabajadas <= 40) {
+                sueldoBruto = horasTrabajadas * cuotaNormal;
+            }
+            if (horasTrabajadas > 40) {
+                horasExtra = horasTrabajadas - 40;
+
+                sueldoBruto = cuotaNormal * 40 + horasExtra * (cuotaNormal + cuotaNormal * .5);
+            }
+
+
+
+            document.writeln("<p>Sueldo bruto de empleado " +
+                 contador + " = $" + sueldoBruto);
+                 contador++;
+        }
+
+
+    </script>
+</body>
+
+</html>

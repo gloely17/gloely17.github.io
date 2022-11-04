@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8.9</title>
+    
+</head>
+<body>
+    <p>
+        <a href="../Capitulo 8/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+    
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+
+    <script>
+        var numeros,contador=1;
+
+        while(contador<=5){
+            numeros=window.prompt(contador+".- Ingresa un numero");
+            numeros=parseInt(numeros);
+
+            document.write("<h2>");
+
+            for(let i=0; i<numeros; i++){
+                document.write("*");
+            }
+            document.write("</h2>");
+            ++contador;
+        }
+    </script>
+</body>
+</html>

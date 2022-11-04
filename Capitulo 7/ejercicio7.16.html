@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Ejercicio 7.16 </title>
+
+    
+</head>
+
+<body>
+    <p>
+        <a href="../Capitulo 7/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+    
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+
+    <script>
+        var numero;
+        var contador;
+
+        contador = 0;
+        numero=1;
+
+        document.writeln("<table border = '1'>");
+        document.writeln("<thead>");
+            document.writeln("<tr>");
+                document.writeln("<th>N</th>");
+                document.writeln("<th>10*N</th>");
+                document.writeln("<th>100*N</th>");
+                document.writeln("<th>1000*N</th>");
+
+                //rellenar tabla
+                document.writeln("<tbody>");
+
+                    while(contador<6){
+                        document.writeln("<tr>");
+                            document.writeln("<td>"+numero+"</td>");
+                            document.writeln("<td>"+numero*10+"</td>");
+                            document.writeln("<td>"+numero*100+"</td>");
+                            document.writeln("<td>"+numero*1000+"</td>");
+
+                        document.writeln("<tr>");
+                            contador++;
+                            numero++;
+                    }
+
+                document.writeln("</tbody>");
+            document.writeln("</tr>");
+            document.writeln("</thead>");
+            document.writeln("</table>");
+
+    </script>
+</body>
+
+</html>

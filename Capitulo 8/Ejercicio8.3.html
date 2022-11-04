@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" >
+        u   {color:rgb(118, 36, 185);}
+    </style>
+</head>
+<body>
+    <p>
+        <a href="../Capitulo 8/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+    
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+    <h3>8.3 Encuentre el error en cada uno de los siguientes segmentos de código, y explique cómo corregirlo:</h3>
+
+    <p>
+        a) x = 1; while ( x <= 10 ); ++x; } <br> b) switch ( n ) { case 1: document.writeln( "El n&uacute;mero es 1" ); case 2: document.writeln( "El n&uacute;mero es 2" ); break; default: document.writeln( "El n&uacute;mero no es 1 ni 2" ); break; } <br> 
+        c) El siguiente código debe imprimir los valores 1 a 10: n = 1; while ( n < 10 ) document.writeln( n++ );
+    </p>
+
+    <p class="resp">
+        a) <u>Error:</u> El punto y coma después del encabezado while provoca un ciclo infinito; además falta una llave izquierda. Corrección: Reemplazar el punto y coma por una llave izquierda ({), o eliminar tanto el punto y coma (;) como la llave derecha (}). <br> 
+        b) <u>Error:</u> Falta una instrucción break en las instrucciones del primer case. Corrección: Agregue una instrucción break al final de las instrucciones para el primer case. Cabe mencionar que esta omisión no es necesariamente un error, si desea que la instrucción del case 2: se ejecute siempre que lo haga la instrucción del case 1:. <br> 
+        c) <u>Error:</u> Se está utilizando un operador relacional inadecuado en la condición de continuación de la instrucción de repetición while. Corrección: Use <= en vez de <, o cambie el 10 a 11.
+    </p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6.16</title>
+    
+</head>
+<body>
+    <p>
+        <a href="../Capitulo 6/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+
+    <script>
+        var num1, num2,resultado;
+
+        num1=window.prompt("Ingresa un numero");
+        num2=window.prompt("Ingresa otro numero");
+
+        resultado=parseInt(num1)+parseInt(num2);
+
+        document.write("<h2>La suma es: "+resultado+"<br>");
+            
+        resultado=parseInt(num1)*parseInt(num2);
+        document.write("El producto es: "+resultado+"<br>");
+        
+        resultado=parseInt(num1)-parseInt(num2);
+        document.write("La diferencia es: "+resultado+"<br>");
+        
+        resultado=parseInt(num1)/parseInt(num2);
+        document.write("El cociente es: "+resultado+"<br> </h2>");
+    </script>
+</body>
+</html>

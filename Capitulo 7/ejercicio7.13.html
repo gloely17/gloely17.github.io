@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Ejercicio 7.13 </title>
+
+    
+</head>
+
+<body>
+    <p>
+        <a href="../Capitulo 7/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+    
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+
+    <script>
+        var totalArt1;
+        var totalArt2;
+        var totalArt3;
+        var totalArt4;
+        var total;
+        var totalReal;
+        var contador;
+        var comision;
+
+        document.writeln("<h1>Ingresos de vendedor: </h1>")
+        
+            
+            
+                totalArt1 = window.prompt(
+                    "Total de articulo 1 vendidos: "
+                );
+                totalArt2 = window.prompt(
+                    "Total de articulo 2 vendidos: "
+                );
+                totalArt3 = window.prompt(
+                    "Total de articulo 3 vendidos: "
+                );
+                totalArt4 = window.prompt(
+                    "Total de articulo 4 vendidos: "
+                );
+                totalArt1 = parseFloat(totalArt1) * 239.99;
+                totalArt2 = parseFloat(totalArt2) * 129.75;
+                totalArt3 = parseFloat(totalArt3) * 99.95;
+                totalArt4 = parseFloat(totalArt4) * 350.89;
+
+                total = totalArt1 + totalArt2 + totalArt3 + totalArt4;
+                comision = (total / 100) * 9;
+                totalReal = total + comision;
+
+
+                document.writeln("<p>Ingresos de articulo 1 = $" + totalArt1);
+                document.writeln("<p>Ingresos de articulo 2 = $" + totalArt2);
+                document.writeln("<p>Ingresos de articulo 3 = $" + totalArt3);
+                document.writeln("<p>Ingresos de articulo 4 = $" + totalArt4);
+                document.writeln("<p>Total de ingresos totales $= " + total);
+                document.writeln("<p>Comision (9%) = $" + comision);
+                document.writeln("<p>Total a pagar = $" + totalReal);
+                contador++;
+    </script>
+</body>
+
+</html>

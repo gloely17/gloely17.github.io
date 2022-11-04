@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Ejercicio 7.15 </title>
+
+    
+</head>
+
+<body>
+    <p>
+        <a href="../Capitulo 7/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+    
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+
+    <script>
+        var numero;
+        var mayor;
+        var contador;
+
+        contador = 0;
+        mayor = 0;
+
+        document.writeln("<h1>El numero mayor es: </h1>")
+
+        while (contador < 10) {
+            numero = window.prompt(
+                "Ingrese un numero de un digito: "
+            );
+            numero = parseInt(numero);
+            if (mayor < numero) {
+                mayor = numero;
+            }
+            contador++;
+        }
+        document.writeln("<h2>" + mayor + "</h2>");
+
+    </script>
+</body>
+
+</html>

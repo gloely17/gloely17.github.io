@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Ejercicio 7.11 </title>
+
+    
+</head>
+
+<body>
+    <p>
+        <a href="../Capitulo 7/index.html">
+            <img src ="../img/izquierda.png" width="60" height="50" alt="Regresar">
+          </a>
+    
+        <a href="../index.html">
+            <img src="../img/home.png" width="60" height="50" alt="regresarmenuprincipal">
+        </a>
+    </p>
+
+    <script>
+        var Kilometros;
+        var litros;
+        var kilometrosPorLitro;
+        var kilometrosInt;
+        var litrosInt;
+        var operacion;
+        var contador;
+
+
+        operacion = 1;
+        kilometrosPorLitro = 0;
+        contador = 1;
+
+
+
+        document.writeln("<h1>Kilometros recorridos por litro: ")
+        while (operacion == 1) {
+            operacion = window.prompt(
+
+                "1= ingresar datos; -1= salir "
+            );
+            if (operacion == 1) {
+                kilometros = window.prompt(
+                    "Kilometros recorridos: "
+                );
+                litros = window.prompt(
+                    "Litros usados: "
+                );
+
+                kilometrosInt = parseFloat(kilometros);
+                litrosInt = parseFloat(litros);
+                kilometrosPorLitro = kilometrosInt / litrosInt;
+                document.writeln("<p>Auto "+contador+": " + kilometrosPorLitro + " kilometros por litro</p>");
+                contador++;
+            }
+            else {
+
+            }
+
+        } 
+
+    </script>
+</body>
+
+</html>
